@@ -106,3 +106,8 @@ These sources of information immediately come to mind:
 - [UniFi product information page](http://www.ubnt.com/enterprise/#unifi)
 - [UniFi updates blog](https://community.ubnt.com/t5/UniFi-Updates-Blog/bg-p/Blog_UniFi)
 - [pfSense: Developing Packages](https://doc.pfsense.org/index.php/Developing_Packages)
+
+A couple of forum posts:
+
+- [Port shar for Unifi by feld](http://community.ubnt.com/t5/UniFi-Wireless/UniFi-wipes-database-every-restart/td-p/382389)
+- [Ubiquiti Unifi package for pfSense](https://forum.pfsense.org/index.php?topic=46342.0)
