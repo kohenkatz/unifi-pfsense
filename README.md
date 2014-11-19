@@ -11,7 +11,25 @@ The objective of this project is to develop and maintain a package that provides
 Status
 ------
 
-The project now provides two working scripts: an rc script to start and stop the UniFi controller, and an installation script to automatically download and install everything, including the rc script.
+The project provides the following:
+
+- UniFi 3.2.7, via download from Ubiquiti
+- An rc script to start and stop the UniFi controller
+- An installation script to automatically download and install the above
+
+Requirements
+------------
+
+- pfSense 2.1.5
+
+The project has not yet been tested on the 2.2 branch.
+
+Dependencies (installed automatically)
+--------------------------------------
+
+- OpenJDK 7
+- mongodb
+- unzip
 
 Milestones
 ----------
@@ -35,9 +53,8 @@ Once the package is stable, we have some other big ideas:
 Challenges
 ----------
 
-- Because the UniFi Controller software is proprietary, it cannot be built from source and cannot be included directly in a package. To work around this, we can download the UniFi controller software directly from Ubiquiti during the installation process.
-- Because Ubiquiti does not provide a standard way to fetch the software (not even a "latest" symlink), we cannot identify the appropriate version to download from Ubiquiti programmatically. It will be up to the package maintainer to keep the package up to date with the latest version of the software available from Ubiquiti.
-- Version 3 of the UniFI software has just been released, and it is not clear what the differences are from v2 for the purposes of this project.
+- Because the UniFi Controller software is proprietary, it cannot be built from source and cannot be included directly in a package. To work around this, we can download the UniFi controller software from Ubiquiti during the installation process.
+- Because Ubiquiti does not provide a uniform way to identify the latest version, it will be up to the package maintainer to track the Ubiquiti blog and keep the script up to date with the latest software download URL.
 
 Licensing
 ---------
@@ -86,7 +103,6 @@ References
 
 These sources of information immediately come to mind:
 
-- [UniFi product information page](http://www.ubnt.com/unifi#UnifiSoftware)
-- [UniFI download and documentation](http://www.ubnt.com/download#UniFi:AP)
-- [UniFi updates blog](http://community.ubnt.com/t5/UniFi-Updates-Blog/bg-p/Blog_UniFi)
+- [UniFi product information page](http://www.ubnt.com/enterprise/#unifi)
+- [UniFi updates blog](https://community.ubnt.com/t5/UniFi-Updates-Blog/bg-p/Blog_UniFi)
 - [pfSense: Developing Packages](https://doc.pfsense.org/index.php/Developing_Packages)
