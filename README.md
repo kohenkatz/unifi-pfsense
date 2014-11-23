@@ -20,9 +20,9 @@ The project provides the following:
 Requirements
 ------------
 
-- pfSense 2.1.5
+- pfSense 2.2 BETA
 
-The project has not yet been tested on the 2.2 branch.
+The *will not work* on any version of pfSense older than 2.2.
 
 Dependencies (installed automatically)
 --------------------------------------
